@@ -2,11 +2,13 @@
   <div>
     Formページ
     <HeadComp></HeadComp>
+    <TextareaComp></TextareaComp>
   </div>
 </template>
 
 <script>
 import HeadComp from '@/components/modules/HeadComp'
+import TextareaComp from '@/components/modules/TextareaComp'
 export default {
   name: 'form',
   data () {
@@ -15,7 +17,8 @@ export default {
     }
   },
   components: {
-    HeadComp
+    HeadComp,
+    TextareaComp
   }
 }
 </script>

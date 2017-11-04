@@ -1,21 +1,14 @@
 <template>
-  <div>
-    Formページ
-    <HeadComp></HeadComp>
-  </div>
+  <h1>{{title}}</h1>
 </template>
 
 <script>
-import HeadComp from '@/components/modules/HeadComp'
 export default {
-  name: 'form',
+  name: 'headComp',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js App'
+      title: '感想を入力'
     }
-  },
-  components: {
-    HeadComp
   }
 }
 </script>

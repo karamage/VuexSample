@@ -62,15 +62,15 @@ export default new Vuex.Store({
     setStepCount (state) {
       console.log("rootsetStepCount")
       state.stepCount++
-    }
-  },
-  updateImpression (state, value) {
-    state.impression = value
-    if (state.impression) {
-      state.errorFlag = true
-    } else {
-      state.errorFlag = false
-    }
+    },
+    updateImpression (state, value) {
+      state.impression = value
+      if (state.impression) {
+        state.errorFlag = true
+      } else {
+        state.errorFlag = false
+      }
+    },
   },
   modules: {
     Form,

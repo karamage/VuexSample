@@ -15,15 +15,10 @@ import StringComp from '@/components/modules/StringComp'
 import { mapActions, mapGetters } from 'vuex'
 export default {
   name: 'form',
-  data () {
-    return {
-      button: '確認'
-    }
-  },
   methods: mapActions('Form', {
     'buttonAction': 'buttonAction'
   }),
-  computed: mapActions('Form', {
+  computed: mapGetters('Form', {
     'button': 'getButton'
   }),
   components: {

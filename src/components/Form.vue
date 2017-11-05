@@ -23,6 +23,9 @@ export default {
   methods: mapActions('Form', {
     'buttonAction': 'buttonAction'
   }),
+  computed: mapActions('Form', {
+    'button': 'getButton'
+  }),
   components: {
     HeadComp,
     TextareaComp,

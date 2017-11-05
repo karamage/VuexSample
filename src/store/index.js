@@ -18,6 +18,9 @@ const Form = {
       if (rootState.errorFlag) {
         commit('setStepCount', null, {root: true}) //rootへのアクセス
       }
+      if (rootState.stepCount == 2) {
+        router.push('thanks')
+      }
     }
   },
   getters: {
